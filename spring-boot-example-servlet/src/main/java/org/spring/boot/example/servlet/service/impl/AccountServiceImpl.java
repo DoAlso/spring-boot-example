@@ -1,7 +1,7 @@
 package org.spring.boot.example.servlet.service.impl;
 
-import org.spring.boot.example.servlet.repository.AccountRepository;
 import org.spring.boot.example.servlet.service.AccountService;
+import org.spring.boot.example.servlet.service.OrderService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -10,14 +10,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class AccountServiceImpl implements AccountService {
 
-    private final AccountRepository accountRepository;
+    private final OrderService orderService;
 
-    public AccountServiceImpl(AccountRepository accountRepository){
-        this.accountRepository = accountRepository;
+    public AccountServiceImpl(OrderService orderService){
+        this.orderService = orderService;
     }
 
     @Override
     public Integer createAccount() {
-        return accountRepository.insertAccount();
+        return null;
     }
 }
