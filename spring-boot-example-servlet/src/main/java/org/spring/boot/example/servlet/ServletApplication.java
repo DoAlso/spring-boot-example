@@ -1,5 +1,8 @@
 package org.spring.boot.example.servlet;
 
+import org.spring.boot.example.servlet.listener.MyCustomListener;
+import org.spring.boot.example.servlet.listener.MyListener;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -14,9 +17,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 public class ServletApplication {
-
+    @Value("${spring.test.value}")
+    private static String value;
     public static void main( String[] args ) {
         System.out.println( "Hello World!" );
-        SpringApplication.run(ServletApplication.class, args);
+        System.out.println(value);
+        SpringApplication application = new SpringApplication(ServletApplication.class);
+        application.addListeners(new MyListener());
+        application.addListeners(new MyCustomListener());
+        application.run(args);
     }
 }

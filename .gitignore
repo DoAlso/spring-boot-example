@@ -1,8 +1,15 @@
-*target*
 *.jar
 *.war
 *.ear
+*.db
+rebel.xml
+# Windows #
+Thumbs.db
+Desktop.ini
+*.svn
 *.class
+target
+!*.dll
 
 # eclipse specific git ignore
 *.pydevproject
@@ -19,6 +26,16 @@ local.properties
 .classpath
 .settings/
 .loadpath
+
+### IntelliJ IDEA ###
+.idea
+.mvn
+*.iws
+*.iml
+*.ipr
+*.log
+mvnw
+mvnw.*
 
 # External tool builders
 .externalToolBuilders/
