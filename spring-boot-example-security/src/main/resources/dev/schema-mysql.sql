@@ -69,11 +69,11 @@ CREATE TABLE `mid_user_role`  (
 DROP TABLE IF EXISTS `permission`;
 CREATE TABLE `permission`  (
   `permission_id` int(11) NOT NULL AUTO_INCREMENT,
-  `permission_type` char(8)  CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '权限类型：1.菜单按钮权限，2.资源权限',
+  `permission_type` char(8) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '权限类型：1.菜单按钮权限，2.资源权限',
   `permission_name` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '',
   `permission_enable` char(1) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '是否启用',
   PRIMARY KEY (`permission_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci;
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for role

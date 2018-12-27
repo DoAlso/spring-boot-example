@@ -27,6 +27,15 @@
     <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
     <result column="remark" jdbcType="VARCHAR" property="remark" />
   </resultMap>
+
+  <resultMap id="UserResultMap" type="com.spring.boot.example.security.model.SystemUser">
+    <id column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="account" jdbcType="VARCHAR" property="username" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <collection property="roles" select="selectRolesByUserId" column="user_id"/>
+  </resultMap>
+
+
   <sql id="Example_Where_Clause">
     <!--
       WARNING - @mbg.generated
@@ -102,6 +111,11 @@
     salt, status, del_flag, login_ip, login_date, create_by, create_time, update_by, 
     update_time, remark
   </sql>
+
+  <sql id="User_Role_Column_List">
+    role.role_id as roleId,role.role_name as roleName,role.role_key as roleKey
+  </sql>
+
   <select id="selectByExample" parameterType="com.spring.boot.example.security.model.UserExample" resultMap="BaseResultMap">
     <!--
       WARNING - @mbg.generated
@@ -505,4 +519,20 @@
       remark = #{remark,jdbcType=VARCHAR}
     where user_id = #{userId,jdbcType=INTEGER}
   </update>
+  
+  <select id="selectUserByAccount" resultMap="UserResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from user where account = #{account , jdbcType=VARCHAR}
+  </select>
+
+  <select id="selectRolesByUserId" resultType="com.spring.boot.example.security.model.Role">
+    SELECT
+    <include refid="User_Role_Column_List"/>
+    FROM role
+    INNER JOIN mid_user_role ON role.role_id = mid_user_role.role_id
+    INNER JOIN `user` ON mid_user_role.user_id = `user`.user_id
+    WHERE user.user_id = #{userId,jdbcType=INTEGER}
+  </select>
+
 </mapper>

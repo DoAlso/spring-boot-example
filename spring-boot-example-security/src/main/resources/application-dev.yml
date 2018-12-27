@@ -13,3 +13,5 @@ spring:
 mybatis:
   mapper-locations: classpath:mybatis/*.xml
   type-aliases-package: com.spring.boot.example.security.model
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
