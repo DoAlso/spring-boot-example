@@ -1,3 +1,4 @@
+.idea/
 *.jar
 *.war
 *.ear
@@ -10,7 +11,7 @@ Desktop.ini
 *.class
 target
 !*.dll
-.idea
+
 
 # eclipse specific git ignore
 *.pydevproject
