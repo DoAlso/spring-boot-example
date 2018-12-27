@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-example.iml" filepath="$PROJECT_DIR$/spring-boot-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-spring-boot-starter/dubbo-spring-boot-starter.iml" filepath="$PROJECT_DIR$/dubbo-spring-boot-starter/dubbo-spring-boot-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-spring-boot-starter/dubbo-spring-boot-starter.iml" filepath="$PROJECT_DIR$/dubbo-spring-boot-starter/dubbo-spring-boot-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-parent.iml" filepath="$PROJECT_DIR$/example-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-example-dubbo/spring-boot-example-dubbo.iml" filepath="$PROJECT_DIR$/spring-boot-example-dubbo/spring-boot-example-dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-example-dubbo/spring-boot-example-dubbo.iml" filepath="$PROJECT_DIR$/spring-boot-example-dubbo/spring-boot-example-dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-example-security/spring-boot-example-security.iml" filepath="$PROJECT_DIR$/spring-boot-example-security/spring-boot-example-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-example-security/spring-boot-example-security.iml" filepath="$PROJECT_DIR$/spring-boot-example-security/spring-boot-example-security.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-example-servlet/spring-boot-example-servlet.iml" filepath="$PROJECT_DIR$/spring-boot-example-servlet/spring-boot-example-servlet.iml" />
     </modules>
   </component>

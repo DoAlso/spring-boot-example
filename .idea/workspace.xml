@@ -2,10 +2,80 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36999f25-ab8e-4a07-a685-917203316156" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-spring-boot-starter/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-spring-boot-starter/src/main/java/com/doalso/dubbo/spring/boot/DubboAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-spring-boot-starter/src/main/java/com/doalso/dubbo/spring/boot/DubboCommonAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-spring-boot-starter/src/main/java/com/doalso/dubbo/spring/boot/DubboConsumerAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-spring-boot-starter/src/main/java/com/doalso/dubbo/spring/boot/DubboProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-spring-boot-starter/src/main/java/com/doalso/dubbo/spring/boot/DubboProviderAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-spring-boot-starter/src/main/java/com/doalso/dubbo/spring/boot/annotation/EnableDubboConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-spring-boot-starter/src/main/java/com/doalso/dubbo/spring/boot/bean/ClassIdBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-spring-boot-starter/src/main/java/com/doalso/dubbo/spring/boot/bean/DubboSpringBootStarterConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-spring-boot-starter/src/main/java/com/doalso/dubbo/spring/boot/context/event/DubboBannerApplicationListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-spring-boot-starter/src/main/java/com/doalso/dubbo/spring/boot/health/DubboHealthIndicator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-spring-boot-starter/src/main/java/com/doalso/dubbo/spring/boot/listener/ConsumerSubscribeListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-spring-boot-starter/src/main/java/com/doalso/dubbo/spring/boot/server/DubboServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-spring-boot-starter/src/main/resources/META-INF/dubbo/com.alibaba.dubbo.rpc.InvokerListener" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-spring-boot-starter/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-spring-boot-starter/src/main/resources/META-INF/spring.provides" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example-parent.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dubbo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dubbo/src/main/java/com/spring/boot/example/dubbo/DubboApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dubbo/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/java/com/spring/boot/example/security/SecurityApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/java/com/spring/boot/example/security/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/java/com/spring/boot/example/security/dao/MenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/java/com/spring/boot/example/security/dao/MidRolePermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/java/com/spring/boot/example/security/dao/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/java/com/spring/boot/example/security/dao/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/java/com/spring/boot/example/security/model/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/java/com/spring/boot/example/security/model/MenuExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/java/com/spring/boot/example/security/model/MidRolePermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/java/com/spring/boot/example/security/model/MidRolePermissionExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/java/com/spring/boot/example/security/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/java/com/spring/boot/example/security/model/RoleExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/java/com/spring/boot/example/security/model/SystemUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/java/com/spring/boot/example/security/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/java/com/spring/boot/example/security/model/UserExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/java/com/spring/boot/example/security/service/SystemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/java/com/spring/boot/example/security/service/impl/SystemServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/java/com/spring/boot/example/security/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/java/com/spring/boot/example/security/utils/FastJsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/resources/dev/data-mysql.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/resources/dev/schema-mysql.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/resources/generator/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/resources/mybatis/MenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/resources/mybatis/MidRolePermissionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/resources/mybatis/RoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/resources/mybatis/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/resources/prod/data-mysql.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/main/resources/prod/schema-mysql.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-security/src/test/java/com/spring/boot/example/security/SecurityApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-servlet/src/main/java/org/spring/boot/example/servlet/listener/CustomApplicationEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-servlet/src/main/java/org/spring/boot/example/servlet/listener/MyCustomListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-servlet/src/main/java/org/spring/boot/example/servlet/listener/MyListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-example-servlet/spring-boot-example-servlet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-servlet/spring-boot-example-servlet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-example-servlet/src/main/java/org/spring/boot/example/servlet/ServletApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-servlet/src/main/java/org/spring/boot/example/servlet/ServletApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-example-servlet/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-servlet/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/spring-boot-example-servlet/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-example-dubbo/target/" />
+    <ignored path="$PROJECT_DIR$/dubbo-spring-boot-starter/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-example-security/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-boot-example-servlet/src/main/java/org/spring/boot/example/servlet/ServletApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+            <state relative-caret-position="350">
+              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -26,16 +96,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-boot-example-servlet/src/main/java/org/spring/boot/example/servlet/controller/UserResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+            <state relative-caret-position="200">
+              <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#504#505#0" expanded="true" />
                 <element signature="e#555#556#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -63,56 +142,20 @@
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Kotlin File" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spring-boot-example-servlet/src/main/java/org/spring/boot/example/servlet/App.java" />
-        <option value="$PROJECT_DIR$/spring-boot-example-servlet/src/main/java/org/spring/boot/example/servlet/service/AccountService.java" />
-        <option value="$PROJECT_DIR$/spring-boot-example-servlet/src/main/java/org/spring/boot/example/servlet/repository/AccountRepository.java" />
-        <option value="$PROJECT_DIR$/spring-boot-example-servlet/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/spring-boot-example-servlet/src/main/java/org/spring/boot/example/servlet/service/OrderService.java" />
-        <option value="$PROJECT_DIR$/spring-boot-example-servlet/src/main/java/org/spring/boot/example/servlet/service/impl/OrderServiceImpl.java" />
-        <option value="$PROJECT_DIR$/spring-boot-example-servlet/src/main/java/org/spring/boot/example/servlet/service/impl/AccountServiceImpl.java" />
-        <option value="$PROJECT_DIR$/spring-boot-example-servlet/src/main/java/org/spring/boot/example/servlet/controller/AccountController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot-example-servlet/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot-example-servlet/src/main/java/org/spring/boot/example/servlet/ServletApplication.java" />
-        <option value="$PROJECT_DIR$/spring-boot-example-servlet/src/main/java/org/spring/boot/example/servlet/bean/Account.java" />
-        <option value="$PROJECT_DIR$/spring-boot-example-servlet/src/main/java/org/spring/boot/example/servlet/repository/UserRepository.java" />
-        <option value="$PROJECT_DIR$/spring-boot-example-servlet/src/main/java/org/spring/boot/example/servlet/config/JerseyConfig.java" />
-        <option value="$PROJECT_DIR$/spring-boot-example-servlet/src/main/java/org/spring/boot/example/servlet/controller/UserResource.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="366" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="480" />
     <option name="y" value="35" />
-    <option name="width" value="2015" />
+    <option name="width" value="1902" />
     <option name="height" value="1105" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -121,6 +164,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -132,21 +177,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543240650935" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../manhadun" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545915097712" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -164,10 +198,24 @@
     <configuration name="ServletApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-boot-example-servlet" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.spring.boot.example.servlet.ServletApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="spring-boot-example-servlet" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
     </configuration>
   </component>
   <component name="SvnConfiguration">
@@ -185,16 +233,18 @@
       <workItem from="1543241239811" duration="858000" />
       <workItem from="1544241627259" duration="620000" />
       <workItem from="1545046321059" duration="88000" />
+      <workItem from="1545914758397" duration="333000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12282000" />
+    <option name="totallyTimeSpent" value="68000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="894" y="204" width="1612" height="884" extended-state="0" />
+    <frame x="384" y="28" width="1521" height="884" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17760618" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19070403" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -210,7 +260,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.30053192" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.34175533" />
       <window_info anchor="bottom" id="Docker" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
@@ -230,9 +280,6 @@
       <window_info anchor="right" id="Bean Validation" order="10" />
       <window_info anchor="right" id="Maven" order="11" weight="0.32947233" />
     </layout>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/spring-boot-example-servlet/src/test/java/org/spring/boot/example/servlet/AppTest.java">
@@ -320,11 +367,6 @@
         <state relative-caret-position="155">
           <caret line="97" column="54" lean-forward="true" selection-start-line="97" selection-start-column="54" selection-end-line="97" selection-end-column="54" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-321" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-example-servlet/src/main/java/org/spring/boot/example/servlet/service/AccountService.java">
@@ -471,8 +513,8 @@
     <entry file="file://$PROJECT_DIR$/spring-boot-example-servlet/src/main/java/org/spring/boot/example/servlet/repository/UserRepository.java" />
     <entry file="file://$PROJECT_DIR$/spring-boot-example-servlet/src/main/java/org/spring/boot/example/servlet/ServletApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        <state relative-caret-position="350">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -498,13 +540,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-example-servlet/src/main/java/org/spring/boot/example/servlet/controller/UserResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+        <state relative-caret-position="200">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#504#505#0" expanded="true" />
             <element signature="e#555#556#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
         </state>
       </provider>
     </entry>
