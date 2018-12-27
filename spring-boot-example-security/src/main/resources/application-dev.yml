@@ -8,7 +8,12 @@ spring:
     schema: classpath:dev/schema-mysql.sql
     data: classpath:dev/data-mysql.sql
     platform: mysql
-    initialization-mode: always
+    initialization-mode: never
+  security:
+    user:
+      name: admin
+      password: admin123
+      roles: ADMIN,USER
 
 mybatis:
   mapper-locations: classpath:mybatis/*.xml
