@@ -1,22 +1,16 @@
 ##Spring Boot2.x 必须添加 initialization-mode配置才会执行，默认为EMBEDDED也就是嵌入式数据库（H2这种），如果要在mysql下执行需要设置成为always
 spring:
-  datasource:
-    url: jdbc:mysql://106.12.97.129:3306/ximao?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
-    username: root
-    password: doalso@123456
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    schema: classpath:dev/schema-mysql.sql
-    data: classpath:dev/data-mysql.sql
-    platform: mysql
-    initialization-mode: never
+#  datasource:
+#    url: jdbc:mysql://106.12.97.129:3306/ximao?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+#    username: root
+#    password: doalso@123456
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    schema: classpath:dev/schema-mysql.sql
+#    data: classpath:dev/data-mysql.sql
+#    platform: mysql
+#    initialization-mode: never
   security:
     user:
       name: admin
       password: admin123
       roles: ADMIN,USER
-
-mybatis:
-  mapper-locations: classpath:mybatis/*.xml
-  type-aliases-package: com.spring.boot.example.security.model
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

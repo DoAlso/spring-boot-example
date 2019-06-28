@@ -13,7 +13,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.1.RELEASE</version>
+		<version>2.1.6.RELEASE</version>
 	</parent>
 
 	<properties>
@@ -28,15 +28,5 @@
 		<module>spring-boot-example-dubbo</module>
 		<module>spring-boot-example-security</module>
 	</modules>
-
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>servlet.springboot.example</groupId>
-				<artifactId>spring-boot-example-servlet</artifactId>
-				<version>${sevlet.version}</version>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
 
 </project>

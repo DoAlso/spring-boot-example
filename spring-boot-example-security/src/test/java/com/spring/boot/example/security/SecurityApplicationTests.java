@@ -1,14 +1,10 @@
 package com.spring.boot.example.security;
 
-import com.spring.boot.example.security.utils.FastJsonUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import javax.annotation.Resource;
 
 /**
  * @ClassName SecurityApplicationTests
@@ -20,16 +16,7 @@ import javax.annotation.Resource;
 @SpringBootTest
 public class SecurityApplicationTests {
 
-    @Resource
-    private UserDetailsService userDetailsService;
-
     @Test
     public void contextLoads() {
-    }
-
-    @Test
-    public void getSystemUserByAccount(){
-        UserDetails userDetails = userDetailsService.loadUserByUsername("admin");
-        System.out.println(FastJsonUtil.toJSONString(userDetails));
     }
 }
