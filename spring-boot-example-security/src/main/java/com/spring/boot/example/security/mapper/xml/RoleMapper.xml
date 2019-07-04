@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.spring.boot.example.security.mapper.RoleMapper">
+	<!--开启二级缓存-->
+	<cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+	<resultMap id="BaseResultMap" type="com.spring.boot.example.security.entity.Role">
+		<id column="id" property="id" />
+		<result column="role_name" property="roleName" />
+		<result column="role_alias" property="roleAlias" />
+		<result column="role_status" property="roleStatus" />
+		<result column="tenant_id" property="tenantId" />
+		<result column="parent_id" property="parentId" />
+		<result column="creater" property="creater" />
+		<result column="created" property="created" />
+		<result column="updater" property="updater" />
+		<result column="updated" property="updated" />
+		<result column="enabled" property="enabled" />
+	</resultMap>
+
+    <!-- 通用查询结果列-->
+    <sql id="Base_Column_List">
+        id, role_name AS roleName, role_alias AS roleAlias, role_status AS roleStatus, tenant_id AS tenantId, parent_id AS parentId, creater, created, updater, updated, enabled
+    </sql>
+</mapper>

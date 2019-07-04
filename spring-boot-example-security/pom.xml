@@ -34,9 +34,16 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <optional>true</optional>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.1.2</version>
+        </dependency>
+
+        <!-- 数据库连接驱动 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
@@ -45,6 +52,54 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <profiles>
+        <profile>
+            <id>generator</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.baomidou</groupId>
+                        <artifactId>mybatisplus-maven-plugin</artifactId>
+                        <version>1.0.1</version>
+                        <configuration>
+                            <!-- 输出目录(默认java.io.tmpdir) -->
+                            <outputDir>${pom.basedir}/src/main/java</outputDir>
+                            <!-- 开发者名称 -->
+                            <author>Huyaxi</author>
+                            <!-- 是否开启 ActiveRecord 模式(默认true) -->
+                            <activeRecord>true</activeRecord>
+                            <!-- 数据源配置，( **必配** ) -->
+                            <dataSource>
+                                <driverName>com.mysql.cj.jdbc.Driver</driverName>
+                                <url>jdbc:mysql://localhost:3306/security?useUnicode=true&amp;useSSL=false&amp;serverTimezone=UTC</url>
+                                <username>root</username>
+                                <password>qwe12356</password>
+                            </dataSource>
+                            <strategy>
+                                <naming>underline_to_camel</naming>
+                            </strategy>
+                            <packageInfo>
+                                <parent>com.spring.boot.example.security</parent>
+                                <service>service</service>
+                                <serviceImpl>service.impl</serviceImpl>
+                                <entity>entity</entity>
+                                <mapper>mapper</mapper>
+                                <xml>mapper.xml</xml>
+                            </packageInfo>
+                        </configuration>
+                        <dependencies>
+                            <dependency>
+                                <groupId>mysql</groupId>
+                                <artifactId>mysql-connector-java</artifactId>
+                                <version>${mysql.version}</version>
+                            </dependency>
+                        </dependencies>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 
     <build>
         <plugins>
