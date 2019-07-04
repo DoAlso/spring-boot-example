@@ -1,13 +1,9 @@
 package com.spring.boot.example.security.config;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
  * @ClassName WebSecurityConfig
@@ -15,15 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  * @DATE 2019/7/3 17:08
  */
 @EnableWebSecurity
-public class WebSecurityConfig implements WebMvcConfigurer {
-
-    @Bean
-    public UserDetailsService userDetailsService() throws Exception{
-        InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
-        manager.createUser(User.withDefaultPasswordEncoder().username("admin").password("123456").roles("USER").build());
-        return manager;
-    }
-
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     /**
      * 这个是webMvcConfigurerAdapter的默认
@@ -34,6 +22,7 @@ public class WebSecurityConfig implements WebMvcConfigurer {
      * @param httpSecurity
      * @throws Exception
      */
+    @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity
                 .authorizeRequests()
