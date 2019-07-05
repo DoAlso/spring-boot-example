@@ -1,10 +1,13 @@
 package org.spring.boot.example.servlet;
 
+import org.spring.boot.example.servlet.bean.AppConfig;
 import org.spring.boot.example.servlet.listener.MyCustomListener;
 import org.spring.boot.example.servlet.listener.MyListener;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Configuration;
 
 /**
  * Hello world!
@@ -19,12 +22,26 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ServletApplication {
     @Value("${spring.test.value}")
     private static String value;
+
     public static void main( String[] args ) {
         System.out.println( "Hello World!" );
-        System.out.println(value);
         SpringApplication application = new SpringApplication(ServletApplication.class);
-        application.addListeners(new MyListener());
+        //application.addListeners(new MyListener());
         application.addListeners(new MyCustomListener());
         application.run(args);
+        System.out.println(value);
+    }
+
+
+    @Configuration
+    public class ApplicationConfig {
+
+        @Autowired
+        private AppConfig appConfig;
+
+        public void app(){
+            System.out.println(appConfig.getInitConfig().getAppName());
+            System.out.println(appConfig.getInitConfig().getAuthor());
+        }
     }
 }
