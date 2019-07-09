@@ -32,7 +32,7 @@ import java.util.stream.Collectors;
  */
 @Service
 @AllArgsConstructor
-public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService, UserDetailsService {
+public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {
     private UserMapper userMapper;
     private UserRoleMapper userRoleMapper;
     private RoleMapper roleMapper;

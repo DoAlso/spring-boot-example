@@ -18,5 +18,7 @@ public class SecurityApplicationTests {
 
     @Test
     public void contextLoads() {
+        String role_admin = String.join(",", "ROLE_ADMIN","ROLE_USER");
+        System.out.println(role_admin);
     }
 }

@@ -2,6 +2,7 @@ package com.spring.boot.example.security.service;
 
 import com.spring.boot.example.security.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
+import org.springframework.security.core.userdetails.UserDetailsService;
 
 /**
  * <p>
@@ -11,6 +12,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author Huyaxi
  * @since 2019-07-04
  */
-public interface IUserService extends IService<User> {
+public interface IUserService extends IService<User>, UserDetailsService {
 	
 }
