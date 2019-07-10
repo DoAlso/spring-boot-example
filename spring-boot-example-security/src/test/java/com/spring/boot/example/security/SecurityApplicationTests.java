@@ -3,6 +3,7 @@ package com.spring.boot.example.security;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.test.context.junit4.SpringRunner;
 
 
@@ -20,5 +21,6 @@ public class SecurityApplicationTests {
     public void contextLoads() {
         String role_admin = String.join(",", "ROLE_ADMIN","ROLE_USER");
         System.out.println(role_admin);
+        System.out.println(new BCryptPasswordEncoder().encode("123456"));
     }
 }
