@@ -1,5 +1,6 @@
 package com.spring.boot.example.security.config;
 
+import com.spring.boot.example.security.handler.LoginSuccessHandler;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -32,6 +33,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity
                 .formLogin()
+                .successHandler(new LoginSuccessHandler())
+                .permitAll()
                 .and()
                 .authorizeRequests()
                 .anyRequest()
