@@ -5,7 +5,3 @@ spring:
     username: root
     password: qwe12356
     driver-class-name: com.mysql.cj.jdbc.Driver
-#    schema: classpath:dev/schema-mysql.sql
-#    data: classpath:dev/data-mysql.sql
-#    platform: mysql
-#    initialization-mode: never

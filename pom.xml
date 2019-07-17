@@ -16,12 +16,6 @@
 		<version>2.1.6.RELEASE</version>
 	</parent>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring-data-releasetrain.version>Fowler-SR2</spring-data-releasetrain.version>
-		<sevlet.version>0.0.1-SNAPSHOT</sevlet.version>
-	</properties>
-
 	<modules>
 		<module>spring-boot-example-servlet</module>
         <module>dubbo-spring-boot-starter</module>
