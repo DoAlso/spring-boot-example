@@ -1,7 +1,6 @@
 package org.spring.boot.example.servlet.listener;
 
 import org.spring.boot.example.servlet.ServletApplication;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.event.ApplicationStartedEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
@@ -15,12 +14,16 @@ import org.springframework.stereotype.Component;
 @Component
 public class MyListener implements ApplicationListener<ApplicationStartedEvent> {
 
-    @Autowired
-    private ServletApplication.ApplicationConfig config;
+    private final ServletApplication.ApplicationConfig config;
+
+    public MyListener(ServletApplication.ApplicationConfig config) {
+        this.config = config;
+    }
 
     @Override
    public void onApplicationEvent(ApplicationStartedEvent applicationStartedEvent) {
-        System.out.println("SpringBoot事件机制...");
+        System.out.println("MyListener: SpringBoot事件机制...");
         config.app();
+        config.annotations();
     }
 }
