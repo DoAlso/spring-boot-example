@@ -2,11 +2,13 @@ package org.spring.boot.example.servlet.config;
 
 import org.spring.boot.example.servlet.bean.AppConfig;
 import org.spring.boot.example.servlet.bean.InitConfig;
+import org.spring.boot.example.servlet.filters.MyFilter;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
+import javax.servlet.Filter;
 
 /**
  * Java配置类--@Bean的用法示例
@@ -32,5 +34,11 @@ public class JavaBeanConfig {
         initConfig.setAppName("Servlet App");
         initConfig.setAuthor("胡亚曦");
         return initConfig;
+    }
+
+
+    @Bean
+    public Filter filter(){
+        return new MyFilter();
     }
 }
