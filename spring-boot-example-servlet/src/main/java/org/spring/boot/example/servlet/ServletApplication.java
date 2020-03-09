@@ -3,8 +3,8 @@ package org.spring.boot.example.servlet;
 import org.spring.boot.example.servlet.bean.AppConfig;
 import org.spring.boot.example.servlet.config.CustomSpringApplication;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 import java.lang.annotation.Annotation;
@@ -20,6 +20,7 @@ import java.lang.annotation.Annotation;
  * Spring-boot-jersey-sample
  * @author Administrator
  */
+@ServletComponentScan
 @SpringBootApplication
 public class ServletApplication {
     @Value("${spring.test.value}")
