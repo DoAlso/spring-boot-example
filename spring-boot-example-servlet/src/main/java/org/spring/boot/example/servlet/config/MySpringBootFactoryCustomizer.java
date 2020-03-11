@@ -14,6 +14,6 @@ public class MySpringBootFactoryCustomizer implements SpringBootFactoryCustomize
 
     @Override
     public void customize(MySpringBootFactory factory) {
-        System.out.println("》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》");
+        System.out.println(" >>> MySpringBootFactoryCustomizer: customize >>> ");
     }
 }

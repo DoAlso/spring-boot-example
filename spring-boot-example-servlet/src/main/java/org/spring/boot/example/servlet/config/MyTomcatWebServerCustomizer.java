@@ -16,5 +16,7 @@ public class MyTomcatWebServerCustomizer implements WebServerFactoryCustomizer<T
     @Override
     public void customize(TomcatServletWebServerFactory factory) {
         System.out.println("MyTomcatWebServerCustomizer: >> 此处可对tomcat服务器进行自定义的配置 >>");
+        factory.setPort(80);
+        System.out.println("MyTomcatWebServerCustomizer: >> 此处可对tomcat服务器端口被设置为80 >>");
     }
 }
