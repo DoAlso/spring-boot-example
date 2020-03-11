@@ -12,17 +12,17 @@ import org.springframework.stereotype.Component;
  * @DATE 2018/12/13 13:54
  */
 @Component
-public class MyListener implements ApplicationListener<ApplicationStartedEvent> {
+public class MyApplicationStartedEventListener implements ApplicationListener<ApplicationStartedEvent> {
 
     private final ServletApplication.ApplicationConfig config;
 
-    public MyListener(ServletApplication.ApplicationConfig config) {
+    public MyApplicationStartedEventListener(ServletApplication.ApplicationConfig config) {
         this.config = config;
     }
 
     @Override
    public void onApplicationEvent(ApplicationStartedEvent applicationStartedEvent) {
-        System.out.println("MyListener: SpringBoot事件机制...");
+        System.out.println("MyApplicationStartedEventListener: SpringBoot的应用上下文载入完毕...");
         config.app();
         config.annotations();
     }
