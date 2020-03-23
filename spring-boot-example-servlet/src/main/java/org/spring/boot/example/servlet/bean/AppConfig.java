@@ -23,6 +23,10 @@ public class AppConfig implements InitializingBean, DisposableBean, Lifecycle {
 
     private InitConfig initConfig;
 
+    static {
+        System.out.println("AppConfig：开始加载静态块......");
+    }
+
     public AppConfig(ApplicationContext applicationContext){
         this.applicationContext = applicationContext;
         System.out.println("AppConfig: 开始创建类的实例......");
